@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/vault_toolbar_other" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/vault_white"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/loading"
+                layout="@layout/vault_layout_loading" />
+
+            <include
+                android:id="@+id/noInternet"
+                layout="@layout/vault_layout_no_internet" />
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvTitleNew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="6dp"
+                        android:text="Enter details of your Will"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:fontFamily="@font/semibold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/vault_bold"
+                            android:gravity="center"
+                            android:text="Holder : "
+                            android:textAlignment="center"
+                            android:textColor="@color/blue_new"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txtHolderName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/vault_bold"
+                            android:gravity="center"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textColor="@color/blue_new"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txtMandatory"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/vault_bold"
+                            android:gravity="center"
+                            android:text="(*)"
+                            android:textColor="@color/blue_new"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/ipOriginalWillLocated"
+                        style="@style/Widget.App.TextInputLayout.OutlinedBoxRegular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Where is your original Will located?">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtOriginalWillLocated"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textMultiLine" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/ipFile"
+                        style="@style/Widget.App.TextInputLayout.OutlinedBoxRegular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="6dp"
+                        android:hint="Upload Document">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtFile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:focusable="false"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:minLines="1" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvOpenWill"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Open will"
+                        android:textColor="@color/blue_new"
+                        android:visibility="gone"
+                        android:fontFamily="@font/vault_medium"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginEnd="12dp"/>
+
+                    <TextView
+                        android:id="@+id/txtSubmit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/vault_bg_button_fill"
+                        android:backgroundTint="@color/blue_new"
+                        android:fontFamily="@font/medium"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text="Submit"
+                        android:textAlignment="center"
+                        android:textColor="@color/vault_white"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

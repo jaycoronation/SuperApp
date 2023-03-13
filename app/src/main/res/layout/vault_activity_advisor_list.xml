@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/vault_toolbar_other" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/vault_white"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/loading"
+                layout="@layout/vault_layout_loading" />
+
+            <include
+                android:id="@+id/noInternet"
+                layout="@layout/vault_layout_no_internet" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include
+                    android:id="@+id/noData"
+                    layout="@layout/vault_layout_no_data" />
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvList"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:nestedScrollingEnabled="false">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                    </LinearLayout>
+
+                </androidx.core.widget.NestedScrollView>
+
+                <ImageView
+                    android:id="@+id/ivAddAdvisor"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="@drawable/vault_bg_add"
+                    android:backgroundTint="@color/blue_new"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:padding="15dp"
+                    android:src="@drawable/vault_ic_fab_add">
+
+                </ImageView>
+            </FrameLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/spalsh_gradient"
+        android:gravity="center"
+        tools:context=".supermain.activity.SplashActivity">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Super App"
+            android:layout_gravity="center"
+            android:fontFamily="@font/semibold"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textColor="@color/fin_plan_colorPrimaryDark"
+            android:textSize="28dp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/tvLogo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:tint="@color/white"
+            android:src="@drawable/ic_alpha_logo"/>
+
+    </LinearLayout>
+
+</layout>

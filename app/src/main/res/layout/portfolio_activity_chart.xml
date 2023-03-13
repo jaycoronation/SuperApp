@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llSplash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tool_bar_bg"
+        android:orientation="vertical">
+
+        <include layout="@layout/portfolio_toolbar_home_new" />
+
+    </LinearLayout>
+
+    <include layout="@layout/portfolio_layout_loading_new" />
+
+    <include layout="@layout/portfolio_layout_no_internet_new" />
+
+    <include layout="@layout/portfolio_layout_nodata_new" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

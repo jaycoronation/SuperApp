@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llMainMicroTactical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.application.alphacapital.superapp.pms.views.MediumTextView
+            android:id="@+id/txtTacticalAssetClass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Debt"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <com.application.alphacapital.superapp.pms.views.MediumTextView
+            android:id="@+id/txtTacticalActualPercentage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="48%"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <com.application.alphacapital.superapp.pms.views.MediumTextView
+            android:id="@+id/txtTacticalPolicyPercentage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="50%"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <com.application.alphacapital.superapp.pms.views.MediumTextView
+            android:id="@+id/txtTacticalVariance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="2%"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTotalMicroTactical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/portfolio_blue_dark_gradient_new"
+        android:orientation="horizontal">
+
+        <com.application.alphacapital.superapp.pms.views.BoldTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Total"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+
+        <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+            android:id="@+id/txtTacticalTotalPercentage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="48%"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+            android:id="@+id/txtTacticalTotalPolicyPercentage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="50%"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+            android:id="@+id/txtTacticalTotalVariance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="2%"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

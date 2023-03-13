@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llSplash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_color_new"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:adjustViewBounds="true"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/portfolio_ic_networth"
+                    app:tint="@color/blue_new" />
+
+                <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+                    android:id="@+id/txtNetworth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="Networth"
+                    android:textColor="@color/blue_new"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:visibility="gone"
+                android:background="@color/portfolio_view_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:adjustViewBounds="true"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/portfolio_ic_portfolio"
+                    app:tint="@color/blue_new"
+                     />
+
+                <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+                    android:id="@+id/txtPortfolio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="Portfolio"
+                    android:textColor="@color/blue_new"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:visibility="gone"
+                android:background="@color/portfolio_view_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:adjustViewBounds="true"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/portfolio_ic_transaction"
+                    app:tint="@color/blue_new"
+                     />
+
+                <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+                    android:id="@+id/txtTransaction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="Transactions"
+                    android:textColor="@color/blue_new"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+                android:layout_marginBottom="4dp"
+                android:background="@color/portfolio_view_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:adjustViewBounds="true"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/portfolio_ic_sip_stp"
+                    app:tint="@color/blue_new"
+                     />
+
+                <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+                    android:id="@+id/txtSIP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="SIP &amp; STP"
+                    android:textColor="@color/blue_new"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:visibility="gone"
+                android:background="@color/portfolio_view_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:adjustViewBounds="true"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/portfolio_ic_performance"
+                    app:tint="@color/blue_new"
+                     />
+
+                <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+                    android:id="@+id/txtPerformance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="Performance"
+                    android:textColor="@color/blue_new"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:visibility="gone"
+                android:background="@color/portfolio_view_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:adjustViewBounds="true"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/portfolio_ic_xirr"
+                    app:tint="@color/blue_new"
+                     />
+
+                <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+                    android:id="@+id/txtXIRR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="XIRR 2019-20"
+                    android:textColor="@color/blue_new"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:visibility="gone"
+                android:background="@color/portfolio_view_line" />
+
+            <LinearLayout
+                android:id="@+id/llBsMovement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:adjustViewBounds="true"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/portfolio_ic_bs_movement"
+                    app:tint="@color/blue_new"
+                     />
+
+                <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+                    android:id="@+id/txtMovement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="BS Movement"
+                    android:textColor="@color/blue_new"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/portfolio_view_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:adjustViewBounds="true"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/portfolio_ic_dividend_summary"
+                    app:tint="@color/blue_new"
+                     />
+
+                <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+                    android:id="@+id/txtDividend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="Dividend Summary"
+                    android:textColor="@color/blue_new"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:visibility="gone"
+                android:background="@color/portfolio_view_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:adjustViewBounds="true"
+                    android:padding="5dp"
+                    android:src="@drawable/portfolio_ic_user_details"
+                    app:tint="@color/blue_new"
+                    android:layout_gravity="center"
+                     />
+
+                <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+                    android:id="@+id/txtPersonalDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="Personal Details"
+                    android:textColor="@color/blue_new"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llLatestTransactions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:adjustViewBounds="true"
+                    android:padding="5dp"
+                    android:src="@drawable/portfolio_ic_transaction"
+                    app:tint="@color/blue_new"
+                    android:layout_gravity="center"
+                    />
+
+                <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="Latest Transactions"
+                    android:textColor="@color/blue_new"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/portfolio_view_line" />
+
+            <LinearLayout
+                android:id="@+id/llLatestSIP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:adjustViewBounds="true"
+                    android:padding="5dp"
+                    android:src="@drawable/portfolio_ic_sip_stp"
+                    app:tint="@color/blue_new"
+                    android:layout_gravity="center"
+                    />
+
+                <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="Latest SIP"
+                    android:textColor="@color/blue_new"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/portfolio_view_line" />
+
+            <LinearLayout
+                android:id="@+id/llSchemeAllocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:adjustViewBounds="true"
+                    android:padding="5dp"
+                    android:src="@drawable/portfolio_ic_scheme_name"
+                    app:tint="@color/blue_new"
+                    android:layout_gravity="center"
+                    />
+
+                <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="Scheme Allocation"
+                    android:textColor="@color/blue_new"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/portfolio_view_line" />
+
+            <LinearLayout
+                android:id="@+id/llFundHouseAllocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:adjustViewBounds="true"
+                    android:padding="5dp"
+                    android:src="@drawable/portfolio_ic_performance"
+                    app:tint="@color/blue_new"
+                    android:layout_gravity="center"
+                    />
+
+                <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="Fund House Allocation"
+                    android:textColor="@color/blue_new"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/portfolio_view_line" />
+
+            <LinearLayout
+                android:id="@+id/llCapitalGain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:adjustViewBounds="true"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/portfolio_ic_capital_gain"
+                    app:tint="@color/blue_new"
+                    />
+
+                <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+                    android:id="@+id/txtCapitalGain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="Capital Gain"
+                    android:textColor="@color/blue_new"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="18dp"
+        app:tint="@color/blue_new"
+        android:src="@drawable/portfolio_icon_logo_header_blue" />
+
+</LinearLayout>

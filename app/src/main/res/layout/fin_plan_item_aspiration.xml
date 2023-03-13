@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvAspirationType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/semibold"
+            android:text="Eesha's HigherEducation"
+            android:textColor="@color/fin_plan_black"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/semibold"
+                android:text="Start Year"
+                android:textColor="@color/fin_plan_text_dark_gray"
+                android:textSize="14sp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/semibold"
+                android:text=" : "
+                android:textColor="@color/fin_plan_text_dark_gray"
+                android:textSize="14sp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvStartYear"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/semibold"
+                android:text="2000"
+                android:textColor="@color/fin_plan_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/semibold"
+                android:text="End Year"
+                android:textColor="@color/fin_plan_text_dark_gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/semibold"
+                android:text=" : "
+                android:textColor="@color/fin_plan_text_dark_gray"
+                android:textSize="14sp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvEndYear"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/semibold"
+                android:text="2000"
+                android:textColor="@color/fin_plan_black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/semibold"
+                android:text="Total Outflow"
+                android:textColor="@color/fin_plan_text_dark_gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/semibold"
+                android:text=" : "
+                android:textColor="@color/fin_plan_text_dark_gray"
+                android:textSize="14sp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvTotalOutflow"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/semibold"
+                android:text="5500000"
+                android:textColor="@color/fin_plan_black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/semibold"
+                android:text="Inflation adjusted outflow"
+                android:textColor="@color/fin_plan_text_dark_gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/semibold"
+                android:text=" : "
+                android:textColor="@color/fin_plan_text_dark_gray"
+                android:textSize="14sp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvInflationAdjustedOutflow"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/semibold"
+                android:text="5500000"
+                android:textColor="@color/fin_plan_black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:fontFamily="@font/semibold"
+                android:text="Wealth required today"
+                android:textColor="@color/fin_plan_text_dark_gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/semibold"
+                android:text=" : "
+                android:textColor="@color/fin_plan_text_dark_gray"
+                android:textSize="14sp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvWealthRequiredToday"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/semibold"
+                android:text="5500000"
+                android:textColor="@color/fin_plan_black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/semibold"
+                android:text="Volatile Component"
+                android:textColor="@color/fin_plan_text_dark_gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/semibold"
+                android:text=" : "
+                android:textColor="@color/fin_plan_text_dark_gray"
+                android:textSize="14sp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvVolatileComponent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/semibold"
+                android:text="10"
+                android:textColor="@color/fin_plan_black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/semibold"
+                android:text="Target Return"
+                android:textColor="@color/fin_plan_text_dark_gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/semibold"
+                android:text=" : "
+                android:textColor="@color/fin_plan_text_dark_gray"
+                android:textSize="14sp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvTargetReturn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/semibold"
+                android:text="7"
+                android:textColor="@color/fin_plan_black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

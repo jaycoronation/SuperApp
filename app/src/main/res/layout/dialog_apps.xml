@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:behavior_peekHeight="70dp"
+    android:padding="12dp"
+    app:layout_behavior="com.application.alphacapital.superapp.vault.view.TopSheetBehavior"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.application.alphacapital.superapp.acpital.textutils.CapitalCustomTextViewSemiBold
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:text="Jump to"
+                android:paddingStart="12dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:background="@color/blue_new"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <com.application.alphacapital.superapp.acpital.textutils.CapitalCustomTextViewSemiBold
+                android:id="@+id/tvAlphaCapital"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/semibold"
+                android:padding="12dp"
+                android:text="Alpha Portfolio"
+                android:foreground="?attr/selectableItemBackground"
+                android:textColor="@color/blue_new"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/text_semidark_gray" />
+
+
+            <com.application.alphacapital.superapp.acpital.textutils.CapitalCustomTextViewSemiBold
+                android:id="@+id/tvFinacialPlanning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/semibold"
+                android:padding="12dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:text="Consolidated Portfolio"
+                android:textColor="@color/blue_new"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/text_semidark_gray" />
+
+
+            <com.application.alphacapital.superapp.acpital.textutils.CapitalCustomTextViewSemiBold
+                android:id="@+id/tvPMS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:foreground="?attr/selectableItemBackground"
+                android:fontFamily="@font/semibold"
+                android:padding="12dp"
+                android:text="Estate Anaysis"
+                android:textColor="@color/blue_new"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/text_semidark_gray" />
+
+            <com.application.alphacapital.superapp.acpital.textutils.CapitalCustomTextViewSemiBold
+                android:id="@+id/tvVault"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/semibold"
+                android:padding="12dp"
+                android:text="Estate Vault"
+                android:foreground="?attr/selectableItemBackground"
+                android:textColor="@color/blue_new"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

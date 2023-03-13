@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/vault_toolbar_other" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/vault_white"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/loading"
+                layout="@layout/vault_layout_loading" />
+
+            <include
+                android:id="@+id/noInternet"
+                layout="@layout/vault_layout_no_internet" />
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvTitleNew"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="6dp"
+                            android:text="Enter details of your Business"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:fontFamily="@font/semibold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/vault_regular"
+                        android:text="Do you own or jointly own a business or businesses?"
+                        android:textColor="@color/vault_black"
+                        android:textSize="14sp"
+                        android:visibility="visible"
+                        app:textAllCaps="false" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/ipOwnOrJointlyBusiness"
+                        style="@style/Widget.App.TextInputLayout.OutlinedBoxRegular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtOwnOrJointlyBusiness"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:inputType="textMultiLine"
+                            android:padding="16dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/vault_regular"
+                        android:text="If yes, list the name, line/area of business and type of organization (e.g., sole proprietorship, partnership,
+limited liability partnership, corporation, closely held corporation)."
+                        android:textColor="@color/vault_black"
+                        android:textSize="14sp"
+                        android:visibility="visible"
+                        app:textAllCaps="false" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:nestedScrollingEnabled="false">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/vault_regular"
+                        android:text="Do you have a document stating your wishes as to the treatment of this entity after your death?"
+                        android:textColor="@color/vault_black"
+                        android:textSize="14sp"
+                        android:visibility="visible"
+                        app:textAllCaps="false" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/ipDocumentStatingYourWishes"
+                        style="@style/Widget.App.TextInputLayout.OutlinedBoxRegular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtDocumentStatingYourWishes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:inputType="textMultiLine"
+                            android:padding="16dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/vault_regular"
+                        android:text="If yes, please write below the location(s) of the document(s). If no, would you like to include any instructions
+or directions here as to the business or any employees?"
+                        android:textColor="@color/vault_black"
+                        android:textSize="14sp"
+                        android:visibility="visible"
+                        app:textAllCaps="false" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/ipDocumentInstructions"
+                        style="@style/Widget.App.TextInputLayout.OutlinedBoxRegular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:hintEnabled="false">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtDocumentInstructions"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textMultiLine"
+                            android:padding="16dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/txtSubmit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/vault_bg_button_fill"
+                        android:fontFamily="@font/medium"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text="Submit"
+                        android:textAlignment="center"
+                        android:textColor="@color/vault_white"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

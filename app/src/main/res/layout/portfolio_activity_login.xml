@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/portfolio_intro_bg"
+    android:gravity="center">
+
+    <include layout="@layout/portfolio_layout_loading" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:fillViewport="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:src="@drawable/portfolio_icon_logo_splash" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="18dp"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+
+                    <com.application.alphacapital.superapp.pms.views.CustomTextInputLayout
+                        android:id="@+id/inputEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/TextLabel.Accent"
+                        android:visibility="visible">
+
+                        <com.application.alphacapital.superapp.pms.views.SemiBoldEditText
+                            android:id="@+id/edtEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:hint="Username*"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:textColor="@color/portfolio_colorPrimaryDark"
+                            android:textSize="14sp" />
+
+                    </com.application.alphacapital.superapp.pms.views.CustomTextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.application.alphacapital.superapp.pms.views.CustomTextInputLayout
+                        android:id="@+id/inputPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/TextLabel.Accent"
+                        android:visibility="visible"
+                        app:passwordToggleEnabled="true"
+                        app:passwordToggleTint="@color/portfolio_colorPrimaryDark">
+
+                        <com.application.alphacapital.superapp.pms.views.SemiBoldEditText
+                            android:id="@+id/edtPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"
+                            android:hint="Password*"
+                            android:inputType="textPassword"
+                            android:singleLine="true"
+                            android:textColor="@color/portfolio_colorPrimaryDark"
+                            android:textSize="14sp" />
+
+                    </com.application.alphacapital.superapp.pms.views.CustomTextInputLayout>
+
+                </LinearLayout>
+
+                <com.application.alphacapital.superapp.pms.views.CustomButton
+                    android:id="@+id/btnSignIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/portfolio_button_bg_dark_with_border"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:padding="13dp"
+                    android:text="Login"
+                    android:textColor="@color/portfolio_white"
+                    android:textSize="16sp"
+                    android:visibility="visible"
+                    app:textAllCaps="false" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

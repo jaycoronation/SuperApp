@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/portfolio_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llToolBarBG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tool_bar_bg"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:elevation="8dp"
+                android:gravity="center_vertical"
+                app:contentInsetEnd="0dp"
+                app:contentInsetStart="0dp"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:gravity="center_vertical"
+                    android:minHeight="?attr/actionBarSize"
+                    android:orientation="horizontal"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp">
+
+                    <LinearLayout
+                        android:id="@+id/llBack"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/ivBack"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:adjustViewBounds="true"
+                            android:padding="5dp"
+                            android:src="@drawable/portfolio_ic_menu_white"
+                            app:tint="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llTitle"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.application.alphacapital.superapp.pms.views.BoldTextView
+                            android:id="@+id/txtTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="8dp"
+                            android:text="PMS"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/capital_ic_arrow_down"
+                            android:padding="6dp"/>
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:id="@+id/flSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:visibility="gone">
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/spnrYears"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@null"
+                            android:dropDownWidth="wrap_content"
+                            android:gravity="center"
+                            android:overlapAnchor="false"
+                            android:spinnerMode="dropdown" />
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="bottom|right"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginBottom="6dp"
+                            android:padding="2dp"
+                            android:src="@drawable/portfolio_ic_spinner_arrow_white"
+                            app:tint="@color/black" />
+
+                    </FrameLayout>
+
+                    <ProgressBar
+                        android:id="@+id/pbToolbar"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="4dp"
+                        android:layoutDirection="ltr"
+                        android:theme="@style/MyProgressBarNew"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/llNotificationToolBar"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:adjustViewBounds="true"
+                            android:padding="5dp"
+                            android:src="@drawable/vault_ic_notification"
+                            app:tint="@color/black" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+        </LinearLayout>
+
+        <androidx.drawerlayout.widget.DrawerLayout
+            android:id="@+id/drawerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:orientation="vertical">
+
+                   <com.application.alphacapital.superapp.pms.utils.NonSwipeableViewPager
+                       android:id="@+id/pager"
+                       android:layout_width="match_parent"
+                       android:layout_height="0dp"
+                       android:layout_weight="1" />
+
+                   <com.google.android.material.tabs.TabLayout
+                       android:id="@+id/tabs"
+                       android:layout_width="match_parent"
+                       android:layout_height="60dp"
+                       android:background="@drawable/bottom_sheet_bg"
+                       android:layout_gravity="bottom"
+                       android:elevation="8dp"
+                       app:tabGravity="fill"
+                       app:tabIndicatorHeight="0dp"
+                       app:tabBackground="@android:color/transparent"
+                       app:tabRippleColor="@null"
+                       app:tabMode="fixed" />
+
+               </LinearLayout>
+
+            </FrameLayout>
+
+            <include
+                layout="@layout/portfolio_layout_navigation"
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start" />
+
+        </androidx.drawerlayout.widget.DrawerLayout>
+
+    </LinearLayout>
+
+</layout>

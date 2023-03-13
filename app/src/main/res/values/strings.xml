@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">AlphaCapital\nSuper App</string>
+    <string name="no_internet_message">Please check your internet connection.</string>
+    <string name="enter_firstname">Please enter first name.</string>
+    <string name="enter_lastname">Please enter last name.</string>
+    <string name="enter_email">Please enter username.</string>
+    <string name="enter_email_valid">Please enter valid email.</string>
+    <string name="enter_mobile">Please enter mobile number.</string>
+    <string name="enter_valid_mobile">Please enter valid mobile number.</string>
+    <string name="enter_password">Please enter password.</string>
+    <string name="enter_country">Please select country code.</string>
+    <string name="api_failed_message">Something went wrong! Please try again later.</string>
+    <string name="rupees">₹ </string>
+
+    <string name="rs">₹</string>
+    <string name="default_notification_channel_id" translatable="false">Alpha Vault Channel</string>
+    <string name="notifications_admin_channel_name">Alpha Vault</string>
+
+
+    <string name="facebook_app_id">1424432150968262</string>
+    <string name="fb_login_protocol_scheme">fb1424432150968262</string>
+    <string name="bid">10250</string>
+
+    <string name="logout_message">Are you sure you want to Logout from XXX?</string>
+
+    <!-- font -->
+    <string name="font_regular">Rubik-Regular.ttf</string>
+    <string name="font_light">Rubik-Light.ttf</string>
+    <string name="font_medium">Rubik-Medium.ttf</string>
+    <string name="font_semibold">Rubik-Medium.ttf</string>
+    <string name="font_bold">Rubik-Bold.ttf</string>
+    <string name="ruppe">₹</string>
+    <string name="api_failed">Something not right, Please try again.</string>
+    <!-- network -->
+    <string name="network_failed_message">No internet connection&#33;</string>
+
+    <string name="no_data">No data found!</string>
+    <string name="no_award_data">No award found!</string>
+    <string name="no_capability_data">No capability found!</string>
+    <string name="no_research_data">No research found!</string>
+    <string name="no_location_data">No location found!</string>
+
+    <string name="loading_progress_message">Loading...</string>
+
+</resources>

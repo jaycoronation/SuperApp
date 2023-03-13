@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/portfolio_white"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/loading"
+            layout="@layout/portfolio_layout_loading_new" />
+
+        <include
+            android:id="@+id/noInternet"
+            layout="@layout/portfolio_layout_no_internet_new" />
+
+        <include
+            android:id="@+id/noData"
+            layout="@layout/portfolio_layout_nodata_new" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="13dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/portfolio_blue_dark_gradient_new_with_radius"
+                    android:orientation="vertical">
+
+                    <com.application.alphacapital.superapp.pms.views.RegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:text="Networth"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        tools:ignore="HardcodedText" />
+
+                    <ProgressBar
+                        android:id="@+id/pbNetworthTotal"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="20dp"
+                        android:layoutDirection="ltr"
+                        android:theme="@style/MyProgressBar" />
+
+                    <com.application.alphacapital.superapp.pms.views.BoldTextView
+                        android:id="@+id/txtTotalNetworth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="20dp"
+                        android:textColor="@color/white"
+                        android:textSize="35sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llMainAssetAllocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.application.alphacapital.superapp.pms.views.BoldTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="Asset Allocation"
+                            android:textColor="@color/blue_new"
+                            android:textSize="18sp"
+                            tools:ignore="HardcodedText" />
+
+                        <com.application.alphacapital.superapp.pms.views.BoldTextView
+                            android:id="@+id/txtGraphAssetAllocation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="4dp"
+                            android:paddingTop="10dp"
+                            android:paddingEnd="4dp"
+                            android:paddingBottom="10dp"
+                            android:text="Table"
+                            android:textColor="@color/blue_new"
+                            android:textSize="16sp"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/pbAssetAllocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ProgressBar
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:layoutDirection="ltr"
+                            android:theme="@style/MyProgressBarNew" />
+
+                    </LinearLayout>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cvAssetAllocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginBottom="25dp"
+                        android:elevation="5dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="10dp"
+                        app:strokeColor="@color/blue_new"
+                        app:strokeWidth="0.5dp">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvAssetAllocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:nestedScrollingEnabled="false"
+                            android:scrollbars="none"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/pieAssetAllocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginBottom="18dp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llApplicantsDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.application.alphacapital.superapp.pms.views.BoldTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="Applicants Allocation"
+                            android:textColor="@color/blue_new"
+                            android:textSize="18sp"
+                            tools:ignore="HardcodedText"/>
+
+                        <com.application.alphacapital.superapp.pms.views.BoldTextView
+                            android:id="@+id/txtApplicantsDetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="4dp"
+                            android:paddingTop="10dp"
+                            android:paddingEnd="4dp"
+                            android:paddingBottom="10dp"
+                            android:text="Table"
+                            android:textColor="@color/blue_new"
+                            android:textSize="16sp"
+                            tools:ignore="HardcodedText"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/pbApplicantsDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ProgressBar
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:layoutDirection="ltr"
+                            android:theme="@style/MyProgressBarNew" />
+
+                    </LinearLayout>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cvApplicantsDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginBottom="25dp"
+                        android:elevation="5dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="10dp"
+                        app:strokeColor="@color/blue_new"
+                        app:strokeWidth="0.5dp">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvApplicantsDetails"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:nestedScrollingEnabled="false"
+                            android:scrollbars="none"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/pieApplicantsDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginBottom="18dp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llAssetStrategic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="2dp"
+                        android:orientation="vertical">
+
+                        <com.application.alphacapital.superapp.pms.views.BoldTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Asset Allocation - Strategic"
+                            android:textColor="@color/blue_new"
+                            android:textSize="18sp"
+                            tools:ignore="HardcodedText"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal"
+                            tools:ignore="DisableBaselineAlignment">
+
+                            <LinearLayout
+                                android:id="@+id/llMacroStrategic"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:foreground="?attr/selectableItemBackground"
+                                android:orientation="vertical"
+                                android:paddingTop="6dp"
+                                tools:ignore="UnusedAttribute">
+
+                                <com.application.alphacapital.superapp.pms.views.BoldTextView
+                                    android:id="@+id/txtMacroStrategic"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginBottom="4dp"
+                                    android:text="Macro"
+                                    android:textColor="@color/blue_new"
+                                    android:textSize="16sp"
+                                    tools:ignore="HardcodedText" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.5dp"
+                                    android:layout_marginTop="4dp"
+                                    android:background="@color/vault_text_hint" />
+
+                                <View
+                                    android:id="@+id/viewLineMacroStrategic"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1.5dp"
+                                    android:layout_marginTop="-1dp"
+                                    android:background="@color/blue_new" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llMicroStrategic"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:foreground="?attr/selectableItemBackground"
+                                android:orientation="vertical"
+                                android:paddingTop="6dp"
+                                tools:ignore="UnusedAttribute">
+
+                                <com.application.alphacapital.superapp.pms.views.BoldTextView
+                                    android:id="@+id/txtMicroStrategic"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginBottom="4dp"
+                                    android:text="Micro"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    tools:ignore="HardcodedText" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.5dp"
+                                    android:layout_marginTop="4dp"
+                                    android:background="@color/vault_text_hint" />
+
+                                <View
+                                    android:id="@+id/viewLineMicroStrategic"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1.5dp"
+                                    android:layout_marginTop="-1dp"
+                                    android:background="@color/blue_new"
+                                    android:visibility="gone" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/pbAssetAllocationStrategic"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ProgressBar
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:layoutDirection="ltr"
+                            android:theme="@style/MyProgressBarNew" />
+
+                    </LinearLayout>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cbAssetAllocationStrategic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginBottom="25dp"
+                        android:elevation="5dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="10dp"
+                        app:strokeColor="@color/blue_new"
+                        app:strokeWidth="0.5dp">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvAssetAllocationStrategic"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:nestedScrollingEnabled="false"
+                            android:scrollbars="none"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llAssetTactical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <com.application.alphacapital.superapp.pms.views.BoldTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Asset Allocation - Tactical"
+                            android:textColor="@color/blue_new"
+                            android:textSize="18sp"
+                            tools:ignore="HardcodedText"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal"
+                            tools:ignore="DisableBaselineAlignment">
+
+                            <LinearLayout
+                                android:id="@+id/llMacroTactical"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:foreground="?attr/selectableItemBackground"
+                                android:orientation="vertical"
+                                android:paddingTop="6dp"
+                                tools:ignore="UnusedAttribute">
+
+                                <com.application.alphacapital.superapp.pms.views.BoldTextView
+                                    android:id="@+id/txtMacroTactical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginBottom="4dp"
+                                    android:text="Macro"
+                                    android:textColor="@color/blue_new"
+                                    android:textSize="16sp"
+                                    tools:ignore="HardcodedText" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.5dp"
+                                    android:layout_marginTop="4dp"
+                                    android:background="@color/vault_text_hint" />
+
+                                <View
+                                    android:id="@+id/viewLineMacroTactical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1.5dp"
+                                    android:layout_marginTop="-1dp"
+                                    android:background="@color/blue_new" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llMicroTactical"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:foreground="?attr/selectableItemBackground"
+                                android:orientation="vertical"
+                                android:paddingTop="6dp"
+                                tools:ignore="UnusedAttribute">
+
+                                <com.application.alphacapital.superapp.pms.views.BoldTextView
+                                    android:id="@+id/txtMicroTactical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginBottom="4dp"
+                                    android:text="Micro"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    tools:ignore="HardcodedText" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.5dp"
+                                    android:layout_marginTop="4dp"
+                                    android:background="@color/vault_text_hint" />
+
+                                <View
+                                    android:id="@+id/viewLineMicroTactical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1.5dp"
+                                    android:layout_marginTop="-1dp"
+                                    android:background="@color/blue_new"
+                                    android:visibility="gone" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/pbAssetAllocationTactical"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ProgressBar
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:layoutDirection="ltr"
+                            android:theme="@style/MyProgressBarNew" />
+
+                    </LinearLayout>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cbAssetAllocationTactical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginBottom="18dp"
+                        android:elevation="5dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="10dp"
+                        app:strokeColor="@color/blue_new"
+                        app:strokeWidth="0.5dp">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvAssetAllocationTactical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:nestedScrollingEnabled="false"
+                            android:scrollbars="none"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtAllocationTacticalDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/medium_italic"
+                    android:textColor="@color/blue_new"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:id="@+id/llPerformance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="2dp"
+                        android:orientation="vertical">
+
+                        <com.application.alphacapital.superapp.pms.views.BoldTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Performance"
+                            android:textColor="@color/blue_new"
+                            android:textSize="18sp"
+                            tools:ignore="HardcodedText" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal"
+                            tools:ignore="DisableBaselineAlignment">
+
+                            <LinearLayout
+                                android:id="@+id/llSinceInception"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:foreground="?attr/selectableItemBackground"
+                                android:orientation="vertical"
+                                android:paddingTop="6dp"
+                                tools:ignore="UnusedAttribute">
+
+                                <com.application.alphacapital.superapp.pms.views.BoldTextView
+                                    android:id="@+id/txtSinceInception"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginBottom="4dp"
+                                    android:text="Since Inception"
+                                    android:textColor="@color/blue_new"
+                                    android:textSize="16sp"
+                                    tools:ignore="HardcodedText" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.5dp"
+                                    android:layout_marginTop="4dp"
+                                    android:background="@color/vault_text_hint" />
+
+                                <View
+                                    android:id="@+id/viewLineSinceInception"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1.5dp"
+                                    android:layout_marginTop="-1dp"
+                                    android:background="@color/blue_new" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llNextYear"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:foreground="?attr/selectableItemBackground"
+                                android:orientation="vertical"
+                                android:paddingTop="6dp"
+                                tools:ignore="UnusedAttribute">
+
+                                <com.application.alphacapital.superapp.pms.views.BoldTextView
+                                    android:id="@+id/txtNextYear"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginBottom="4dp"
+                                    android:text="2021-22"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    tools:ignore="HardcodedText" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.5dp"
+                                    android:layout_marginTop="4dp"
+                                    android:background="@color/vault_text_hint" />
+
+                                <View
+                                    android:id="@+id/viewLineNextYear"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1.5dp"
+                                    android:layout_marginTop="-1dp"
+                                    android:background="@color/blue_new"
+                                    android:visibility="gone" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llPreviousYear"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:foreground="?attr/selectableItemBackground"
+                                android:orientation="vertical"
+                                android:paddingTop="6dp"
+                                tools:ignore="UnusedAttribute">
+
+                                <com.application.alphacapital.superapp.pms.views.BoldTextView
+                                    android:id="@+id/txtPreviousYear"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginBottom="4dp"
+                                    android:text="2020-21"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    tools:ignore="HardcodedText" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.5dp"
+                                    android:layout_marginTop="4dp"
+                                    android:background="@color/vault_text_hint" />
+
+                                <View
+                                    android:id="@+id/viewLinePreviousYear"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1.5dp"
+                                    android:layout_marginTop="-1dp"
+                                    android:background="@color/blue_new"
+                                    android:visibility="gone" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/pbPerformance"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <ProgressBar
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:layoutDirection="ltr"
+                            android:theme="@style/MyProgressBarNew" />
+
+                    </LinearLayout>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cvPerformance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginBottom="18dp"
+                        android:elevation="5dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="10dp"
+                        app:strokeColor="@color/blue_new"
+                        app:strokeWidth="0.5dp"
+                        tools:ignore="TooManyViews">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvPerformance"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:nestedScrollingEnabled="false"
+                            android:scrollbars="none"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="18dp"
+                        android:fontFamily="@font/medium_italic"
+                        android:text="*Only for Mutual Funds through Alpha Capital"
+                        android:textColor="@color/blue_new"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.application.alphacapital.superapp.pms.views.BoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="Capital Gain"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        tools:ignore="HardcodedText" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/portfolio_blue_dark_gradient_new_with_radius"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.application.alphacapital.superapp.pms.views.RegularTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="20dp"
+                                android:text="Mukesh Jindal"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                tools:ignore="HardcodedText" />
+
+                            <com.application.alphacapital.superapp.pms.views.BoldTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginBottom="20dp"
+                                android:text="₹ 19,20,000"
+                                android:textColor="@color/white"
+                                android:textSize="22sp"
+                                tools:ignore="HardcodedText" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:background="@color/white" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.application.alphacapital.superapp.pms.views.RegularTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="20dp"
+                                android:text="Abha Agarwal"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                tools:ignore="HardcodedText" />
+
+                            <com.application.alphacapital.superapp.pms.views.BoldTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginBottom="20dp"
+                                android:text="₹ 23,65,000"
+                                android:textColor="@color/white"
+                                android:textSize="22sp"
+                                tools:ignore="HardcodedText" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</layout>

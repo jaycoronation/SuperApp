@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llMainMicroStrategic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <com.application.alphacapital.superapp.pms.views.MediumTextView
+            android:id="@+id/txtAssetClass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:text="Debt"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <com.application.alphacapital.superapp.pms.views.MediumTextView
+            android:id="@+id/txtActualAmount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1.4"
+            android:gravity="center_horizontal"
+            android:text="₹ 21,24,010"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <com.application.alphacapital.superapp.pms.views.MediumTextView
+            android:id="@+id/txtActualPercentage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="0.9"
+            android:gravity="center_horizontal"
+            android:text="48%"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <com.application.alphacapital.superapp.pms.views.MediumTextView
+            android:id="@+id/txtPolicyPercentage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="0.9"
+            android:gravity="center_horizontal"
+            android:text="50%"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <com.application.alphacapital.superapp.pms.views.MediumTextView
+            android:id="@+id/txtVariance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="0.9"
+            android:gravity="center_horizontal"
+            android:text="2%"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTotalMicroStrategic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/portfolio_blue_dark_gradient_new"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <com.application.alphacapital.superapp.pms.views.BoldTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:text="Total"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+            android:id="@+id/txtTotalAmount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1.4"
+            android:gravity="center_horizontal"
+            android:text="₹ 21,24,010"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+            android:id="@+id/txtTotalPercentage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="0.9"
+            android:gravity="center_horizontal"
+            android:text="48%"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+            android:id="@+id/txtTotalPolicyPercentage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="0.9"
+            android:gravity="center_horizontal"
+            android:text="50%"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+            android:id="@+id/txtTotalVariance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="0.9"
+            android:gravity="center_horizontal"
+            android:text="2%"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

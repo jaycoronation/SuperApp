@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llMainAllocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.application.alphacapital.superapp.pms.views.MediumTextView
+            android:id="@+id/txtAllocationSchemeName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.4"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <com.application.alphacapital.superapp.pms.views.MediumTextView
+            android:id="@+id/txtAllocationType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="Type"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <com.application.alphacapital.superapp.pms.views.MediumTextView
+            android:id="@+id/txtAllocationValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="Value"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <com.application.alphacapital.superapp.pms.views.MediumTextView
+            android:id="@+id/txtAllocation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="0.8"
+            android:gravity="center_horizontal"
+            android:text="Allocation"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTotalAllocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/portfolio_blue_dark_gradient_new"
+        android:orientation="horizontal">
+
+        <com.application.alphacapital.superapp.pms.views.BoldTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.4"
+            android:text="Total"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <com.application.alphacapital.superapp.pms.views.MediumTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+            android:id="@+id/txtTotalCurrentValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="Value"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+            android:id="@+id/txtTotalAllocation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="0.8"
+            android:gravity="center_horizontal"
+            android:text="Allocation"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

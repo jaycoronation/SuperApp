@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llMainPortfolio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.application.alphacapital.superapp.pms.views.MediumTextView
+            android:id="@+id/txtPortfolioFundName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Fund Name"
+            android:layout_gravity="top|center"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <com.application.alphacapital.superapp.pms.views.MediumTextView
+            android:id="@+id/txtPortfolioAmountInvest"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:text="Amount Invested"
+            android:layout_gravity="top"
+            android:gravity="top|center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <com.application.alphacapital.superapp.pms.views.MediumTextView
+            android:id="@+id/txtPortfolioCurrentValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:layout_gravity="top"
+            android:gravity="top|center_horizontal"
+            android:text="Current Value"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <com.application.alphacapital.superapp.pms.views.MediumTextView
+            android:id="@+id/txtPortfolioProfit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:layout_gravity="top"
+            android:gravity="top|center_horizontal"
+            android:text="Gain/Loss"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

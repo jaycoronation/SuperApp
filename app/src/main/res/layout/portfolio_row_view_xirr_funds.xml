@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.application.alphacapital.superapp.pms.views.BoldTextView
+        android:id="@+id/txtXirrKey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_blue_new"
+        android:padding="12dp"
+        android:text="Debt"
+        android:textColor="@color/blue_new"
+        android:textSize="16sp" />
+
+    <com.application.alphacapital.superapp.pms.views.BoldTextView
+        android:id="@+id/txtXirrOpeningBalance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_blue_new"
+        android:padding="12dp"
+        android:textColor="@color/blue_new"
+        android:textSize="16sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvXirrFundsValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/portfolio_blue_dark_gradient_new"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Invested Amount"
+                    android:textColor="@color/portfolio_white"
+                    android:textSize="13sp" />
+
+                <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+                    android:id="@+id/txtXirrTotalAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="1015875385"
+                    android:textColor="@color/portfolio_white"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="vertical">
+
+                <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gain"
+                    android:textColor="@color/portfolio_white"
+                    android:textSize="13sp" />
+
+                <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+                    android:id="@+id/txtXirrTotalGain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="1015875385"
+                    android:textColor="@color/portfolio_white"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Abs Return"
+                    android:textColor="@color/portfolio_white"
+                    android:textSize="13sp" />
+
+                <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+                    android:id="@+id/txtXirrTotalReturn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="₹ 80,000"
+                    android:textColor="@color/portfolio_white"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Current Value"
+                    android:textColor="@color/portfolio_white"
+                    android:textSize="13sp" />
+
+                <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+                    android:id="@+id/txtXirrTotalCurrentValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="1015875385"
+                    android:textColor="@color/portfolio_white"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="vertical">
+
+                <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="XIRR"
+                    android:textColor="@color/portfolio_white"
+                    android:textSize="13sp" />
+
+                <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+                    android:id="@+id/txtXirrTotalXirr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="₹ 80,000"
+                    android:textColor="@color/portfolio_white"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Days"
+                    android:textColor="@color/portfolio_white"
+                    android:textSize="13sp" />
+
+                <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+                    android:id="@+id/txtXirrTotalDays"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="₹ 80,000"
+                    android:textColor="@color/portfolio_white"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

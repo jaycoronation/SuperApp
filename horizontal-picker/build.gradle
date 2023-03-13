@@ -1,0 +1,57 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+ext {
+    bintrayRepo = 'HorizontalPicker'
+    bintrayName = 'HorizontalPicker'
+
+    publishedGroupId = 'com.github.jhonnyx2012'
+    libraryName = 'HorizontalPicker'
+    artifact = 'horizontal-picker'
+
+    libraryDescription = 'Horizontal datepicker with smooth selection by day'
+
+    siteUrl = 'https://github.com/jhonnyx2012/HorizontalPicker'
+    gitUrl = 'https://github.com/jhonnyx2012/HorizontalPicker.git'
+
+    libraryVersion = '1.0.6'
+
+    developerId = 'jhonnyx2012'
+    developerName = 'Jhonny Barrios'
+    developerEmail = 'jhonnyx2012@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        configurations.all {
+            resolutionStrategy { force 'androidx.core:core-ktx:1.6.0' }
+        }
+        minSdkVersion 16
+        targetSdkVersion 29
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    api 'joda-time:joda-time:2.9.9'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation "androidx.core:core-ktx:1.7.0"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+
+//apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+//apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'

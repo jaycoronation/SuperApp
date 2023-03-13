@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/portfolio_white_gradient_round_corner_left_right"
+        android:orientation="horizontal">
+
+        <com.application.alphacapital.superapp.pms.views.MediumTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SchemeName"
+            android:textColor="@color/portfolio_colorPrimaryDark"
+            android:textSize="14sp" />
+
+        <com.application.alphacapital.superapp.pms.views.MediumTextView
+            android:id="@+id/txtDialogSchemeName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="Loading..."
+            android:textColor="@color/portfolio_text_dark_gray"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:background="@drawable/portfolio_cool_blue_gradient"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.application.alphacapital.superapp.pms.views.MediumTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Holder Name One"
+            android:textColor="@color/portfolio_colorPrimaryDark"
+            android:textSize="14sp" />
+
+        <com.application.alphacapital.superapp.pms.views.MediumTextView
+            android:id="@+id/txtDialogHolderOneName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="Loading..."
+            android:textColor="@color/portfolio_text_dark_gray"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:background="@drawable/portfolio_white_gradient"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.application.alphacapital.superapp.pms.views.MediumTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Holder Name Two"
+            android:textColor="@color/portfolio_colorPrimaryDark"
+            android:textSize="14sp" />
+
+        <com.application.alphacapital.superapp.pms.views.MediumTextView
+            android:id="@+id/txtDialogHolderTwoName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="Loading..."
+            android:textColor="@color/portfolio_text_dark_gray"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:background="@drawable/portfolio_cool_blue_gradient"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.application.alphacapital.superapp.pms.views.MediumTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nominee"
+            android:textColor="@color/portfolio_colorPrimaryDark"
+            android:textSize="14sp" />
+
+        <com.application.alphacapital.superapp.pms.views.MediumTextView
+            android:id="@+id/txtDialogNominee"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="Loading..."
+            android:textColor="@color/portfolio_text_dark_gray"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@drawable/portfolio_white_gradient"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.application.alphacapital.superapp.pms.views.MediumTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Holder One PAN"
+            android:textColor="@color/portfolio_colorPrimaryDark"
+            android:textSize="14sp" />
+
+        <com.application.alphacapital.superapp.pms.views.MediumTextView
+            android:id="@+id/txtDialogHolderOnePan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="Loading..."
+            android:textColor="@color/portfolio_text_dark_gray"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:background="@drawable/portfolio_cool_blue_gradient"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.application.alphacapital.superapp.pms.views.MediumTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Holder Two PAN"
+            android:textColor="@color/portfolio_colorPrimaryDark"
+            android:textSize="14sp" />
+
+        <com.application.alphacapital.superapp.pms.views.MediumTextView
+            android:id="@+id/txtDialogHolderTwoPan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="Loading..."
+            android:textColor="@color/portfolio_text_dark_gray"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/portfolio_white_gradient"
+        android:orientation="horizontal">
+
+        <com.application.alphacapital.superapp.pms.views.MediumTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Remaining Units"
+            android:textColor="@color/portfolio_colorPrimaryDark"
+            android:textSize="14sp" />
+
+        <com.application.alphacapital.superapp.pms.views.MediumTextView
+            android:id="@+id/txtDialogRemainingUnits"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="Loading..."
+            android:textColor="@color/portfolio_text_dark_gray"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

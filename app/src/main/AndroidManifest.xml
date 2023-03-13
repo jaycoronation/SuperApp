@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.application.alphacapital.superapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name=".vault.utils.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AlphaCapital"
+        android:usesCleartextTraffic="true"
+        android:vmSafeMode="true">
+        <activity
+            android:name=".supermain.activity.YoutubePlayerActivity"
+            android:exported="false"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".supermain.activity.VideoActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".supermain.activity.FeedDetailsActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".supermain.activity.FeedActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".supermain.activity.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".supermain.activity.WebViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".finplan.activity.RiskProfileQuestinnaireActivity"
+            android:exported="true" />
+        <activity
+            android:name=".finplan.activity.FinPlanRiskProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".supermain.activity.ConfirmMeetingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".supermain.activity.FixMeetingAcitivty"
+            android:exported="true" />
+        <activity
+            android:name=".supermain.activity.ContactActivity"
+            android:exported="true" />
+        <activity
+            android:name=".supermain.activity.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".supermain.activity.MainLoginActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".supermain.activity.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pms.activity.PortfolioSplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".pms.activity.PortfolioLoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".pms.activity.AllUsersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pms.activity.OneDayChangeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pms.activity.DashboardPortfolioActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pms.activity.NetworthActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pms.activity.NetworthActivityNew"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pms.activity.PortfolioActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pms.activity.LatestSIPList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pms.activity.SchemeFundListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pms.activity.LatestTransactionsList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pms.activity.CapitalGainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pms.activity.BSMovementActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pms.activity.ChartActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".pms.activity.DividendSummaryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pms.activity.SIPSTPActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pms.activity.PerformanceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pms.activity.XIRRActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".vault.activity.importantdocument.AddImpDocActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".vault.activity.importantdocument.ImpDocListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".vault.activity.safedeposite.AddSafeDepositActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".vault.activity.safedeposite.SafeDepositListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".vault.activity.keystoresidence.AddResidenceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".vault.activity.keystoresidence.ResidenceListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".vault.activity.advisor.AddAdvisorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".vault.activity.advisor.AdvisorListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".vault.activity.VaultSplashActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".vault.activity.VaultLoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.VaultForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.VaultSignupActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.VaultCropActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.VaultUpdateProfileActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.VaultChangePasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.VaultHomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.VaultShareActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.constitution_and_values.ConstitutionAndValuesListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.constitution_and_values.AddConstitutionValuesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.accountholder.AccountHolderListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.accountholder.AddAccountHolderActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.deathnotifications.DeathNotificationsListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.deathnotifications.AddDeathNotificationsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.generally.GenerallyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.minorchildrenadultdependents.MinorChildrenAdultDependentsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.will.WillActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.domesticemployees.DomesticEmployeesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.business.BusinessActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.governmentrelated.AddGovRelatedActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.governmentrelated.GovRelatedListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.insurancepolicies.AddInsurancePoliciesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.insurancepolicies.InsurancePoliciesListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.financialinstitutionaccounts.BankAccountsListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.financialinstitutionaccounts.AddBankAccountsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.realproperty.AddRealPropertyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.realproperty.RealPropertyListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.otherassets.AddOtherAssetsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.otherassets.OtherAssetsListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.employmentrelated.AddEmpRelatedActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.employmentrelated.EmpRelatedListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.investmenttrustaccounts.AddFinancialAssetsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.investmenttrustaccounts.FinancialAssetsListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.mutualfunds.AddMutualFundsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.mutualfunds.MutualFundsListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.sharesbonds.AddShareBondsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.sharesbonds.ShareBondsListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.intellectualproperty.AddIntellectualPropertyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.intellectualproperty.IntellectualPropertyListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.assetsnotpossession.AddAssetsNotPossessionActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.assetsnotpossession.AssetsNotPossessionListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.creditcardsorpersonalorhomeloan.AddCreditCardsPersonalLoanHomeLoanActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.creditcardsorpersonalorhomeloan.CreditCardsPersonalLoanHomeLoanListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.formerspouseorchildrenofformermarriages.AddFormerSpouseOrChildrenofFormerMarriagesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.formerspouseorchildrenofformermarriages.FormerSpouseOrChildrenofFormerMarriagesListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.charityrelatedobligations.AddCharityRelatedObligationsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.charityrelatedobligations.CharityRelatedObligationsListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.fiduciaryobligations.AddFiduciaryObligationsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.fiduciaryobligations.FiduciaryObligationsListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.otherdebts.AddOtherDebtsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".vault.activity.otherdebts.OtherDebtsListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".finplan.activity.FinPlanRiskProfileAllocationListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".finplan.activity.FinPlanReturnRiskListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".finplan.activity.FinPlanWealthRequiredListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".finplan.activity.FinPlanGraphActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".finplan.activity.FinPlanBalanceSheetMovementListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".finplan.activity.assetallocation.FinPlanAddRecommendedAssetAllocationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".finplan.activity.varianceanalysis.FinPlanVarianceAnalysisMacroTacticalListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".finplan.activity.varianceanalysis.FinPlanVarianceAnalysisMicroTacticalListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".finplan.activity.varianceanalysis.FinPlanVarianceAnalysisMacroStrategicListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".finplan.activity.varianceanalysis.FinPlanVarianceAnalysisMicroStrategicListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".finplan.activity.assetallocation.FinPlanRecommendedAssetAllocationListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".finplan.activity.assetallocation.FinPlanAssetAllocationMacroListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".finplan.activity.assetallocation.FinPlanAssetAllocationMicroListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".finplan.activity.networth.FinPlanNetWorthListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".finplan.activity.futureinflow.FinPlanFutureInflowListReportActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".finplan.activity.aspirationfutureexpense.FinPlanAspirationListReportActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".finplan.activity.aspirationfutureexpense.FinPlanAddAspirationFutureExpenseActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".finplan.activity.aspirationfutureexpense.FinPlanAspirationFutureExpenseListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".finplan.activity.futureinflow.FinPlanAddFutureInFlowActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".finplan.activity.futureinflow.FinPlanFutureInFlowListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".finplan.activity.existingliabilities.FinPlanAddExistingLiabilitiesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".finplan.activity.existingliabilities.FinPlanExistingLiabilityListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".finplan.activity.FinPlanChangePasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".finplan.activity.existingassets.FinPlanAddExistingAssetsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".finplan.activity.existingassets.FinPlanExistingAssetsListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".finplan.activity.FinPlanCheckRiskProfileActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".finplan.activity.FinPlanSelectionActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".finplan.activity.FinPlanUserProfileActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".finplan.activity.FinPlanForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".finplan.activity.FinPlanSplashActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".finplan.activity.FinPlanProfileActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".finplan.activity.FinPlanSignupActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".finplan.activity.FinPlanLoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".finplan.activity.FinPlanMainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".acpital.CapitalSplashActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".acpital.CapitalMainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".acpital.CapitalAboutUsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".acpital.CapitalAwardsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".acpital.CapitalCapabilitiesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".acpital.CapitalResearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".acpital.CapitalLocateUsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".acpital.CapitalLocationDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".acpital.CapitalPortfolioActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize|stateHidden" /> <!-- google plus -->
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" /> <!-- facebook data -->
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".acpital.CapitalAboutDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".acpital.CapitalNewsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".acpital.CapitalFAQActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".acpital.CapitalManagementTeamActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".acpital.CapitalReportsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name=".acpital.CapitalUserProfileActivity" />
+        <!--
+<meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <!--
+<provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        -->
+        <receiver
+            android:name=".acpital.service.ConnectivityReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".pms.jobservice.FirstJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.file_provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            android:readPermission="com.alphaestatevault.file_provider.READ">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

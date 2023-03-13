@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/vault_toolbar_other" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/vault_white"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/loading"
+                layout="@layout/vault_layout_loading" />
+
+            <include
+                android:id="@+id/noInternet"
+                layout="@layout/vault_layout_no_internet" />
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvTitleNew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="6dp"
+                        android:text="Enter details related to Medical &amp; Funeral"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:fontFamily="@font/semibold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        android:layout_marginTop="12dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/vault_bold"
+                            android:gravity="center"
+                            android:text="Holder : "
+                            android:textAlignment="center"
+                            android:textColor="@color/blue_new"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txtHolderName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/vault_bold"
+                            android:gravity="center"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textColor="@color/blue_new"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txtMandatory"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/vault_bold"
+                            android:gravity="center"
+                            android:text="(*)"
+                            android:textColor="@color/blue_new"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Directions about Medical or Nursing Home Care"
+                        android:textColor="@color/vault_black"
+                        android:textSize="14sp"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/vault_lighht"
+                        android:visibility="visible"
+                        app:textAllCaps="false" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/ipDirectionsMedicalNursing"
+                        style="@style/Widget.App.TextInputLayout.OutlinedBoxRegular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/edtDirectionsMedicalNursing"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="16dp"
+                            android:layout_gravity="center"
+                            android:inputType="textMultiLine" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your wishes about Organ Donation"
+                        android:textColor="@color/vault_black"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/vault_lighht"
+                        android:visibility="visible"
+                        app:textAllCaps="false" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/ipOrganDonorTransplantationWishes"
+                        style="@style/Widget.App.TextInputLayout.OutlinedBoxRegular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:hintEnabled="false"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtOrganDonorTransplantationWishes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp"
+                            android:inputType="textMultiLine" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Instructions regarding your Funeral, Memorial Services, Disposition of Remains, etc."
+                        android:textColor="@color/vault_black"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/vault_lighht"
+                        android:visibility="visible"
+                        app:textAllCaps="false" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/ipInstructionsAboutFuneral"
+                        style="@style/Widget.App.TextInputLayout.OutlinedBoxRegular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:hintEnabled="false"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtInstructionsAboutFuneral"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp"
+                            android:inputType="textMultiLine" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/txtSubmit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/vault_bg_button_fill"
+                        android:backgroundTint="@color/blue_new"
+                        android:fontFamily="@font/medium"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text="Submit"
+                        android:textAlignment="center"
+                        android:textColor="@color/vault_white"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

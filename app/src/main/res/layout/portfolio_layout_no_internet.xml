@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llNoInternet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/portfolio_intro_bg"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:background="@drawable/portfolio_ic_no_internet" />
+
+        <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Oh no!"
+            android:textColor="@color/portfolio_colorPrimaryDark"
+            android:textSize="16sp" />
+
+        <com.application.alphacapital.superapp.pms.views.MediumTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="No internet connection.\nCheck your connection and try again !"
+            android:textAlignment="center"
+            android:textColor="@color/portfolio_colorPrimaryDark"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</LinearLayout>

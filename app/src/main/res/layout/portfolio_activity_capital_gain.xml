@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/portfolio_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tool_bar_bg"
+        android:orientation="vertical">
+
+        <include layout="@layout/portfolio_toolbar_home_new" />
+
+    </LinearLayout>
+
+    <include layout="@layout/portfolio_layout_loading_new" />
+
+    <include layout="@layout/portfolio_layout_no_internet_new" />
+
+    <include layout="@layout/portfolio_layout_nodata_new" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:id="@+id/llApplicantsSummary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <com.application.alphacapital.superapp.pms.views.BoldTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/blue_new"
+                        android:padding="12dp"
+                        android:text="Applicants Summary"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <com.application.alphacapital.superapp.pms.views.BoldTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Asset Type"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <com.application.alphacapital.superapp.pms.views.BoldTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_weight="0.8"
+                            android:text="STCG\nSTCL"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <com.application.alphacapital.superapp.pms.views.BoldTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_weight="0.8"
+                            android:text="LTCG\nLTCL"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <com.application.alphacapital.superapp.pms.views.BoldTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_weight="0.8"
+                            android:text="Total"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvCapitalGainSummaryList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false"
+                        android:scrollbars="none" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/portfolio_blue_dark_gradient_new"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <com.application.alphacapital.superapp.pms.views.RegularTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Grand Total"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <com.application.alphacapital.superapp.pms.views.RegularTextView
+                            android:id="@+id/txtSTCGAmountGrand"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_weight="0.8"
+                            android:text="STCG\nSTCL"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <com.application.alphacapital.superapp.pms.views.RegularTextView
+                            android:id="@+id/txtLTCGAmountGrand"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_weight="0.8"
+                            android:text="LTCG\nLTCL"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <com.application.alphacapital.superapp.pms.views.RegularTextView
+                            android:id="@+id/txtTotalAmountGrand"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_weight="0.8"
+                            android:text="Total"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:id="@+id/llSummary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <com.application.alphacapital.superapp.pms.views.BoldTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/blue_new"
+                        android:padding="12dp"
+                        android:text="Summary"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <com.application.alphacapital.superapp.pms.views.BoldTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Asset Type"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <com.application.alphacapital.superapp.pms.views.BoldTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_weight="0.8"
+                            android:text="STCG\nSTCL"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <com.application.alphacapital.superapp.pms.views.BoldTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_weight="0.8"
+                            android:text="LTCG\nLTCL"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <com.application.alphacapital.superapp.pms.views.BoldTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_weight="0.8"
+                            android:text="Total"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvSummaryList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false"
+                        android:scrollbars="none" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/portfolio_blue_dark_gradient_new"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <com.application.alphacapital.superapp.pms.views.RegularTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Grand Total"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <com.application.alphacapital.superapp.pms.views.RegularTextView
+                            android:id="@+id/txtSTCGAmountGrandSummary"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_weight="0.8"
+                            android:text="STCG\nSTCL"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <com.application.alphacapital.superapp.pms.views.RegularTextView
+                            android:id="@+id/txtLTCGAmountGrandSummary"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_weight="0.8"
+                            android:text="LTCG\nLTCL"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <com.application.alphacapital.superapp.pms.views.RegularTextView
+                            android:id="@+id/txtTotalAmountGrandSummary"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_weight="0.8"
+                            android:text="Total"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

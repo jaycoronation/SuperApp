@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/llNoInternet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/vault_white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/vault_ic_no_internet"
+            app:tint="@color/vault_colorPrimaryDark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/no_internet_message"
+            android:textAlignment="center"
+            android:textColor="@color/vault_colorPrimaryDark"
+            android:textSize="18sp"
+            android:fontFamily="@font/vault_regular"/>
+
+        <TextView
+            android:id="@+id/tvRetry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/vault_bg_button_fill"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingTop="6dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="6dp"
+            android:text="Retry"
+            android:textAlignment="center"
+            android:textColor="@color/vault_white"
+            android:textSize="16sp"
+            android:fontFamily="@font/vault_regular"/>
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="18dp"
+    android:layout_marginRight="18dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/vault_bold"
+            android:gravity="center"
+            android:text="Holder : "
+            android:textAlignment="center"
+            android:textColor="@color/vault_colorPrimary"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtHolderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/vault_bold"
+            android:gravity="center"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/vault_colorPrimary"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtMandatory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/vault_bold"
+            android:gravity="center"
+            android:text="(*)"
+            android:textColor="@color/vault_colorPrimary"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/iptype_of_property"
+        style="@style/Widget.App.TextInputLayout.OutlinedBoxRegular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="6dp"
+        android:hint="Type of Property">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edttype_of_property"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ipname"
+        style="@style/Widget.App.TextInputLayout.OutlinedBoxRegular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="6dp"
+        android:hint="Name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/iplocation"
+        style="@style/Widget.App.TextInputLayout.OutlinedBoxRegular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="6dp"
+        android:hint="Location">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtlocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:text="" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ipencumbrances"
+        style="@style/Widget.App.TextInputLayout.OutlinedBoxRegular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="6dp"
+        android:hint="Encumbrances">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtencumbrances"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:inputType="textMultiLine" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ipapproximate_value"
+        style="@style/Widget.App.TextInputLayout.OutlinedBoxRegular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="6dp"
+        android:hint="Approximate Value">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtapproximate_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/iploan"
+        style="@style/Widget.App.TextInputLayout.OutlinedBoxRegular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="6dp"
+        android:hint="Loan">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtloan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/iprent"
+        style="@style/Widget.App.TextInputLayout.OutlinedBoxRegular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="6dp"
+        android:hint="Rent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtrent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ippurchased_on"
+        style="@style/Widget.App.TextInputLayout.OutlinedBoxRegular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="6dp"
+        android:hint="Purchased on">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtpurchased_on"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:inputType="text"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/iplocation_of_document"
+        style="@style/Widget.App.TextInputLayout.OutlinedBoxRegular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="6dp"
+        android:hint="Location of Document">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtlocation_of_document"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ipnotes"
+        style="@style/Widget.App.TextInputLayout.OutlinedBoxRegular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="6dp"
+        android:hint="Notes">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtnotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:maxLines="4"
+            android:ellipsize="end"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ipFile"
+        style="@style/Widget.App.TextInputLayout.OutlinedBoxRegular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="6dp"
+        android:hint="Upload File">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtFile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:inputType="text"
+            android:maxLines="1"
+            android:minLines="1"
+            android:focusable="false"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ipNominee_name"
+        style="@style/Widget.App.TextInputLayout.OutlinedBoxRegular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="6dp"
+        android:hint="Nominee Name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtNominee_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:minLines="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/llDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/vault_bg_button_fill"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="4dp"
+            android:fontFamily="@font/vault_regular"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="Delete"
+            android:textColor="@color/vault_white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/vault_ic_delete_black"
+            app:tint="@color/vault_white" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

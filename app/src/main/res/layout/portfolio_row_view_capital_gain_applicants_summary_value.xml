@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llCGMainItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <com.application.alphacapital.superapp.pms.views.RegularTextView
+            android:id="@+id/txtAssetTypeTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Total"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <com.application.alphacapital.superapp.pms.views.RegularTextView
+            android:id="@+id/txtSTCGAmount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_weight="0.8"
+            android:text="STCG\nSTCL"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <com.application.alphacapital.superapp.pms.views.RegularTextView
+            android:id="@+id/txtLTCGAmount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_weight="0.8"
+            android:text="LTCG\nLTCL"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <com.application.alphacapital.superapp.pms.views.RegularTextView
+            android:id="@+id/txtTotalAmount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_weight="0.8"
+            android:text="Total"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

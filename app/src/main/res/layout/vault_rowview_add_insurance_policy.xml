@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="18dp"
+    android:layout_marginRight="18dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="6dp"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/vault_bold"
+            android:gravity="center"
+            android:text="Holder : "
+            android:textAlignment="center"
+            android:textColor="@color/vault_colorPrimary"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtHolderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/vault_bold"
+            android:gravity="center"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/vault_colorPrimary"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtMandatory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/vault_bold"
+            android:gravity="center"
+            android:text="(*)"
+            android:textColor="@color/vault_colorPrimary"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ipInsuranceCompany"
+        style="@style/Widget.App.TextInputLayout.OutlinedBoxRegular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="6dp"
+        android:hint="Insurance Company">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtInsuranceCompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:inputType="textMultiLine" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ipTypeofPolicy"
+        style="@style/Widget.App.TextInputLayout.OutlinedBoxRegular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="6dp"
+        android:hint="Type of Policy">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtTypeofPolicy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:minLines="1"
+            android:text="" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ipPolicyNumber"
+        style="@style/Widget.App.TextInputLayout.OutlinedBoxRegular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="6dp"
+        android:hint="Policy Number">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtPolicyNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:inputType="text"
+            android:maxLines="1"
+            android:minLines="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ipPersonThingInsured"
+        style="@style/Widget.App.TextInputLayout.OutlinedBoxRegular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="6dp"
+        android:hint="Person/Thing Insured">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtPersonThingInsured"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ipSumAssured"
+        style="@style/Widget.App.TextInputLayout.OutlinedBoxRegular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="6dp"
+        android:hint="Sum Assured">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtSumAssured"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ipCurrentValue"
+        style="@style/Widget.App.TextInputLayout.OutlinedBoxRegular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="6dp"
+        android:hint="Current Value">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtCurrentValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ipPurchasedon"
+        style="@style/Widget.App.TextInputLayout.OutlinedBoxRegular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="6dp"
+        android:hint="Purchased on">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtPurchasedon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ipAgentName"
+        style="@style/Widget.App.TextInputLayout.OutlinedBoxRegular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="6dp"
+        android:hint="Agent Name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtAgentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ipAgentPhone"
+        style="@style/Widget.App.TextInputLayout.OutlinedBoxRegular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="6dp"
+        android:hint="Agent Phone">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtAgentPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="10" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ipAddress"
+        style="@style/Widget.App.TextInputLayout.OutlinedBoxRegular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="6dp"
+        android:hint="Address">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:inputType="textMultiLine"
+            android:maxLines="5"
+            android:minLines="2" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ipLocationofdocument"
+        style="@style/Widget.App.TextInputLayout.OutlinedBoxRegular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="6dp"
+        android:hint="Location of document">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtLocationofdocument"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ipNotes"
+        style="@style/Widget.App.TextInputLayout.OutlinedBoxRegular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="6dp"
+        android:hint="Notes">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ipFile"
+        style="@style/Widget.App.TextInputLayout.OutlinedBoxRegular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="6dp"
+        android:hint="Upload Document">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtFile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:inputType="text"
+            android:maxLines="1"
+            android:minLines="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ipNominee_name"
+        style="@style/Widget.App.TextInputLayout.OutlinedBoxRegular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="6dp"
+        android:hint="Nominee Name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtNominee_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:minLines="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/llDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/vault_bg_button_fill"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="8dp"
+            android:fontFamily="@font/vault_regular"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="Delete"
+            android:textColor="@color/vault_white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/vault_ic_delete_black"
+            app:tint="@color/vault_white" />
+
+    </LinearLayout>
+
+</LinearLayout>

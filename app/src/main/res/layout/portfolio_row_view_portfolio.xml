@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.application.alphacapital.superapp.pms.views.BoldTextView
+        android:id="@+id/txtPortfolioTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:background="@color/light_blue_new"
+        android:textColor="@color/blue_new"
+        android:text="Debt"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPortfolioValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:id="@+id/llCatTotalPortfolio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        android:gravity="center"
+        android:background="@drawable/portfolio_blue_dark_gradient_new"
+        android:orientation="horizontal">
+
+        <com.application.alphacapital.superapp.pms.views.BoldTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Total"
+            android:layout_gravity="top|center"
+            android:textColor="@color/portfolio_white"
+            android:textSize="14sp" />
+
+        <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+            android:id="@+id/txtCatAmount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:text="₹ 0"
+            android:layout_gravity="top"
+            android:gravity="top|center_horizontal"
+            android:textColor="@color/portfolio_white"
+            android:textSize="14sp" />
+
+        <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+            android:id="@+id/txtCatCurrent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:layout_gravity="top"
+            android:gravity="top|center_horizontal"
+            android:text="₹ 0"
+            android:textColor="@color/portfolio_white"
+            android:textSize="14sp" />
+
+        <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+            android:id="@+id/txtCatProfit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:layout_gravity="top"
+            android:gravity="top|center_horizontal"
+            android:text="₹ 0"
+            android:textColor="@color/portfolio_white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

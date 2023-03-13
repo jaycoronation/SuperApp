@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/portfolio_white"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/loading"
+            layout="@layout/portfolio_layout_loading_new" />
+
+        <include
+            android:id="@+id/noInternet"
+            layout="@layout/portfolio_layout_no_internet_new" />
+
+        <include
+            android:id="@+id/noData"
+            layout="@layout/portfolio_layout_nodata_new" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/blue_new"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="12dp">
+
+                        <com.application.alphacapital.superapp.pms.views.BoldTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|center"
+                            android:layout_weight="1"
+                            android:text="Fund Name"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <com.application.alphacapital.superapp.pms.views.BoldTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:layout_weight="1"
+                            android:gravity="top|center_horizontal"
+                            android:text="Amount Invested"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <com.application.alphacapital.superapp.pms.views.BoldTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1"
+                            android:gravity="top|center_horizontal"
+                            android:text="Current Value"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <com.application.alphacapital.superapp.pms.views.BoldTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1"
+                            android:gravity="top|center_horizontal"
+                            android:text="Gain/Loss\nCAGR%"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <androidx.core.widget.NestedScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvPortfolio"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:nestedScrollingEnabled="false"
+                                android:orientation="vertical"
+                                android:scrollbars="none"
+                                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                        </androidx.core.widget.NestedScrollView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/portfolio_blue_dark_gradient_new"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
+
+                        <com.application.alphacapital.superapp.pms.views.BoldTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Grand Total"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+                            android:id="@+id/txtGrandToalInvested"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text="₹ 0"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+                            android:id="@+id/txtGrandTotalCurrent"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text="₹ 0"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+                            android:id="@+id/txtGrandTotalProfit"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text="₹ 0"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

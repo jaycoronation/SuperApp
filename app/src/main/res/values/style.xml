@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/portfolio_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/portfolio_colorPrimaryDark</item>
+        <item name="colorAccent">@color/portfolio_colorAccent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="MyProgressBar" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/portfolio_white</item>
+        <item name="colorControlNormal">@color/portfolio_white</item>
+        <item name="colorControlActivated">@color/portfolio_white</item>
+    </style>
+
+    <style name="MyProgressBarNew" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/blue_new</item>
+        <item name="colorControlNormal">@color/blue_new</item>
+        <item name="colorControlActivated">@color/blue_new</item>
+    </style>
+
+    <style name="TextLabel.Accent" parent="Widget.Design.TextInputLayout">
+        <item name="android:textColorHint">@color/portfolio_colorPrimaryDark</item> <!-- Hint color and label color in FALSE state -->
+        <item name="android:textSize">14sp</item><!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/portfolio_colorPrimaryDark</item>
+        <item name="colorControlNormal">@color/portfolio_colorPrimaryDark</item>
+        <item name="colorControlActivated">@color/portfolio_colorPrimaryDark</item>
+    </style>
+
+    <style name="EditText.White" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/portfolio_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/portfolio_colorPrimaryDark</item>
+        <item name="colorAccent">@color/portfolio_colorAccent</item>
+        <item name="colorControlNormal">@color/portfolio_white</item>
+        <item name="colorControlActivated">@color/portfolio_white</item>
+        <item name="colorControlHighlight">@color/portfolio_white</item>
+    </style>
+
+    <style name="MaterialDialogSheetTemp" parent="Theme.AppCompat.Light.Dialog">
+        <item name="bottomSheetStyle">@style/BottomSheet</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="BottomSheet" parent="@style/Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/portfolio_bg_round_corner_left_right</item>
+    </style>
+
+
+    <style name="Widget.App.TextInputLayout.OutlinedBoxRegular" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+        <item name="shapeAppearanceOverlay">?shapeAppearanceMediumComponent</item>
+        <item name="materialThemeOverlay">@style/AppStyle.TextInput.Overlay</item>
+        <item name="colorPrimary">@color/blue_new</item>
+        <item name="colorSecondary">@color/blue_new</item>
+        <item name="colorOnSecondary">@color/blue_new</item>
+        <item name="colorSurface">@color/vault_black</item>
+        <item name="colorOnSurface">@color/vault_black</item> <!--for defalut box color-->
+        <item name="colorError">@color/vault_red_dark</item>
+        <item name="colorOnError">#FFFBFA</item>
+        <item name="colorControlActivated">@color/vault_black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/vault_black</item>
+        <item name="android:textColorHint">@color/fin_plan_text_hint</item>
+        <item name="android:fontFamily">@font/vault_regular</item>
+        <item name="fontFamily">@font/vault_regular</item>
+        <item name="boxBackgroundMode">filled</item>
+        <item name="boxCornerRadiusTopStart">16dp</item>
+        <item name="boxCornerRadiusBottomEnd">16dp</item>
+        <item name="boxCornerRadiusBottomStart">16dp</item>
+        <item name="boxCornerRadiusTopEnd">16dp</item>
+        <item name="hintAnimationEnabled">true</item>
+        <item name="boxBackgroundColor">#edf1fb</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="hintTextAppearance">@style/TextAppearance.App.HintText</item>
+        <item name="errorTextAppearance">@style/TextAppearance.Design.Error</item>
+    </style>
+
+    <style name="AppStyle.TextInput.Overlay" parent="ThemeOverlay.MaterialComponents.TextInputEditText.FilledBox">
+        <item name="editTextStyle">@style/AppStyle.EditText</item>
+    </style>
+
+    <style name="AppStyle.EditText" parent="Widget.MaterialComponents.TextInputEditText.FilledBox">
+        <item name="android:background">@drawable/rounded_stroke</item>
+        <item name="android:textAppearance">@style/TextAppearance.App.HintText</item>
+    </style>
+
+    <style name="ThemeOverlay.App.TextInputEditText.OutlinedBox" parent="Widget.App.TextInputLayout.OutlinedBoxRegular">
+        <item name="editTextStyle">@style/Widget.MaterialComponents.TextInputEditText.OutlinedBox
+        </item>
+    </style>
+
+    <style name="TextAppearance.App.HintText" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textColor">@color/blue_new</item>
+        <item name="itemTextAppearanceActive">@color/blue_new</item>
+        <item name="android:minLines">5</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:colorControlNormal">@color/fin_plan_text_hint</item>
+    </style>
+
+    <style name="TextAppearance.Design.Error" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textColor">@color/vault_red_dark</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/vault_lighht</item>
+        <item name="fontFamily">@font/vault_lighht</item>
+    </style>
+
+    <style name="MyRadioButton" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/vault_black</item>
+        <item name="colorControlNormal">@color/vault_black</item>
+        <item name="colorControlActivated">@color/vault_black</item>
+    </style>
+
+    <style name="SwitchStyleAccent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlActivated">#0086F5</item>
+    </style>
+
+    <style name="TopSheet_DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_out_from_top</item>
+        <item name="android:windowExitAnimation">@anim/slide_back_to_top</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="BaseBottomSheetDialog" />
+
+    <style name="BaseBottomSheetDialog" parent="@style/Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="bottomSheetStyle">@style/BottomSheet</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="MaterialDialogSheet" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/vault_white</item>
+        <item name="colorControlActivated">@color/vault_black</item>
+    </style>
+
+    <style name="ProgressBar" parent="Theme.AppCompat">
+        <item name="colorAccent">@color/vault_white</item> <!-- Whatever color you want-->
+    </style>
+
+    <style name="ProgressBarReverse" parent="Base.Widget.AppCompat.ProgressBar">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <!-- edittext style -->
+
+    <style name="MyEditTextThemeRed">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlHighlight">@color/white</item>
+    </style>
+
+    <style name="MyEditTextThemePrimary">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColorHint">@color/colorPrimary</item>
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+    </style>
+
+    <style name="MyEditTextThemeGray">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColorHint">@color/text_semidark_gray</item>
+        <item name="colorControlNormal">@color/black</item>
+        <item name="colorControlActivated">@color/text_semidark_gray</item>
+        <item name="colorControlHighlight">@color/text_semidark_gray</item>
+    </style>
+
+    <style name="error_appearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="error_appearance_red" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@android:color/holo_red_dark</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>

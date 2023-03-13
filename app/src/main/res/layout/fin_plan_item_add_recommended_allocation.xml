@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvAssetsType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/semibold"
+            android:text="Eesha's HigherEducation"
+            android:textColor="@color/fin_plan_black"
+            android:textSize="16sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputAllocation"
+            android:layout_marginTop="8dp"
+            style="@style/Widget.App.TextInputLayout.OutlinedBoxRegular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Allocation in %">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtAllocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:minLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputReturnExpectation"
+            style="@style/Widget.App.TextInputLayout.OutlinedBoxRegular"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Return Expectation in %">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtReturnExpectation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:minLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

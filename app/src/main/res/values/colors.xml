@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="portfolio_colorPrimary">#0e74b0</color>
+    <color name="portfolio_colorPrimaryDark">#005385</color>
+    <color name="portfolio_colorAccent">#66aee7</color>
+    <color name="portfolio_white">#ffffff</color>
+    <color name="portfolio_text_dark_gray">#444444</color>
+    <color name="portfolio_text_semidark_gray">#666666</color>
+    <color name="portfolio_text_light_gray">#999999</color>
+    <color name="portfolio_text_disabled">#BDBDBD</color>
+    <color name="portfolio_light_primary_color">#DFF1FF</color>
+    <color name="portfolio_light_primary_dark_color">#A7BCCA</color>
+    <color name="portfolio_light_bg_color">#E3F6FA</color>
+    <color name="portfolio_hybrid">#00A698</color>
+    <color name="portfolio_view_line">#c1deef</color>
+    <color name="portfolio_down_red">#DE6A76</color>
+    <color name="portfolio_up_green">#06DFB4</color>
+    <color name="portfolio_other_status">#FFCB39</color>
+    <color name="portfolio_nav_text_color">#073d5d</color>
+
+    <color name="vault_colorPrimary">#2042FE</color>
+    <color name="vault_colorPrimaryDark">#771D75</color>
+    <color name="vault_colorAccent">#94279C</color>
+    <color name="vault_white">#FFFFFF</color>
+    <color name="vault_white_transparent">#22FFFFFF</color>
+    <color name="vault_black">#000000</color>
+    <color name="vault_transparent">#00000000</color>
+    <color name="vault_red_dark">#E43521</color>
+    <color name="vault_red_light">#FFE5E5</color>
+    <color name="vault_green">#008000</color>
+    <color name="vault_yellow">#FFAE2B</color>
+    <color name="vault_text_hint">#9F9F9F</color>
+    <color name="vault_text_dark_gray">#757678</color>
+    <color name="vault_light_primary">#aa94279C</color>
+    <color name="vault_text_light_gray">#E9E9E9</color>
+
+    <color name="fin_plan_colorPrimary">#94279C</color>
+    <color name="fin_plan_colorPrimaryDark">#771D75</color>
+    <color name="fin_plan_colorAccent">#94279C</color>
+    <color name="fin_plan_ssdsd">#AEF44336</color>
+    <color name="fin_plan_white">#FFFFFF</color>
+    <color name="fin_plan_white_transparent">#ccFFFFFF</color>
+    <color name="fin_plan_black">#000000</color>
+    <color name="fin_plan_transparent">#00000000</color>
+    <color name="fin_plan_red_dark">#ee4849</color>
+    <color name="fin_plan_red_light">#FFE5E5</color>
+    <color name="fin_plan_green">#008000</color>
+    <color name="fin_plan_yellow">#FFAE2B</color>
+    <color name="fin_plan_text_hint">#9F9F9F</color>
+    <color name="fin_plan_text_dark_gray">#757678</color>
+    <color name="fin_plan_text_light_gray">#E9E9E9</color>
+
+
+    <color name="colorPrimaryAlpha">#22FFFFFF</color>
+    <color name="colorPrimaryAlphaPortfolio">#33FFFFFF</color>
+    <color name="colorLightPink">#F2E0F3</color>
+    <color name="transparent">#00000000</color>
+    <color name="bg_main_light">#F2F2F2</color>
+    <color name="bg_main_dark">#E9E9E9</color>
+
+    <color name="text_dark_gray">#757678</color>
+    <color name="text_semidark_gray">#666666</color>
+
+    <!--New -->
+    <color name="text_main">#444244</color>
+    <color name="text_sub">#3c3a3c</color>
+    <color name="line">#22FFFFFF</color>
+    <color name="inner_title">#0e7fc1</color>
+    <color name="toolbar_new">#ee4849</color>
+    <color name="view_portfolio">#b4616d</color>
+    <color name="cap_alpha">#55FFFFFF</color>
+    <color name="tool_bar_bg">#EB3F3F</color>
+    <!--gradient -->
+    <color name="rm_gradient_start">#ed4547</color>
+    <color name="rm_gradient_end">#aa39ae</color>
+
+    <color name="gray_color_new">#F5F7FD</color>
+    <color name="blue_new">#2042FE</color>
+    <color name="blue_new_light">#cc2042FE</color>
+    <color name="light_blue_new">#E8EFFC</color>
+    <color name="light_gray_new">#F1F5FB</color>
+
+
+    <color name="chart_color1">#74ABE2</color>
+    <color name="chart_color2">#EF8D5D</color>
+    <color name="chart_color3">#3FB68E</color>
+    <color name="chart_color4">#F06A93</color>
+    <color name="chart_color5">#A97DD8</color>
+
+    <color name="chart_color6">#BF399E</color>
+    <color name="chart_color7">#6973F6</color>
+    <color name="chart_color8">#3AB5C2</color>
+    <color name="chart_color9">#6C8893</color>
+    <color name="chart_color10">#F38787</color>
+
+    <color name="dashboard_bg">#f3f6fd</color>
+
+
+</resources>

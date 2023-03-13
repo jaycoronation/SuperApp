@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/portfolio_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/portfolio_toolbar_home" />
+
+    <include layout="@layout/portfolio_layout_loading" />
+
+    <include layout="@layout/portfolio_layout_no_internet" />
+
+    <include layout="@layout/portfolio_layout_nodata" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llAssets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/portfolio_light_bg_color"
+                android:padding="6dp">
+
+                <com.application.alphacapital.superapp.pms.views.BoldTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:layout_weight="1"
+                    android:text="Assets"
+                    android:textColor="@color/portfolio_colorPrimaryDark"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/imgAsset"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="1dp"
+                    android:adjustViewBounds="true"
+                    android:padding="5dp"
+                    android:src="@drawable/portfolio_ic_down_arrow_blue" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llAssetsSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <com.application.alphacapital.superapp.pms.views.BoldTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Assest Type"
+                        android:textColor="@color/portfolio_colorPrimaryDark"
+                        android:textSize="14sp" />
+
+                    <com.application.alphacapital.superapp.pms.views.BoldTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_weight="1.2"
+                        android:gravity="center_horizontal"
+                        android:text="Applicant One"
+                        android:textColor="@color/portfolio_colorPrimaryDark"
+                        android:textSize="14sp" />
+
+                    <com.application.alphacapital.superapp.pms.views.BoldTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_weight="1.2"
+                        android:gravity="center_horizontal"
+                        android:text="Amount"
+                        android:textColor="@color/portfolio_colorPrimaryDark"
+                        android:textSize="14sp" />
+
+                    <com.application.alphacapital.superapp.pms.views.BoldTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_weight="0.8"
+                        android:gravity="center_horizontal"
+                        android:text="Allocation"
+                        android:textColor="@color/portfolio_colorPrimaryDark"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvNetworth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    android:scrollbars="none" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMicroStrategic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/portfolio_light_bg_color"
+                android:padding="6dp">
+
+                <com.application.alphacapital.superapp.pms.views.BoldTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:layout_weight="1"
+                    android:text="Micro Asset Allocation - Strategic"
+                    android:textColor="@color/portfolio_colorPrimaryDark"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/imgMicroStrategic"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="1dp"
+                    android:adjustViewBounds="true"
+                    android:padding="5dp"
+                    android:src="@drawable/portfolio_ic_right_arrow_blue" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMicroStrategicSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="6dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <com.application.alphacapital.superapp.pms.views.BoldTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="Assest"
+                        android:textColor="@color/portfolio_colorPrimaryDark"
+                        android:textSize="14sp" />
+
+                    <com.application.alphacapital.superapp.pms.views.BoldTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_weight="1.4"
+                        android:gravity="center_horizontal"
+                        android:text="Amount"
+                        android:textColor="@color/portfolio_colorPrimaryDark"
+                        android:textSize="14sp" />
+
+                    <com.application.alphacapital.superapp.pms.views.BoldTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_weight="0.9"
+                        android:gravity="center_horizontal"
+                        android:text="Amount %"
+                        android:textColor="@color/portfolio_colorPrimaryDark"
+                        android:textSize="14sp" />
+
+                    <com.application.alphacapital.superapp.pms.views.BoldTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_weight="0.9"
+                        android:gravity="center_horizontal"
+                        android:text="Policy %"
+                        android:textColor="@color/portfolio_colorPrimaryDark"
+                        android:textSize="14sp" />
+
+                    <com.application.alphacapital.superapp.pms.views.BoldTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_weight="0.9"
+                        android:gravity="center_horizontal"
+                        android:text="Variance"
+                        android:textColor="@color/portfolio_colorPrimaryDark"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvMicroStrategic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    android:scrollbars="none" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

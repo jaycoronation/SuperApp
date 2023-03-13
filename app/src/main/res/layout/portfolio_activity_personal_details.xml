@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/portfolio_toolbar_home"/>
+
+    <include layout="@layout/portfolio_layout_loading" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.application.alphacapital.superapp.pms.views.BoldTextView
+                android:id="@+id/txtSipStpTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/portfolio_light_bg_color"
+                android:padding="12dp"
+                android:text="Holder One Details"
+                android:textColor="@color/portfolio_colorPrimaryDark"
+                android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:orientation="vertical">
+
+            <com.application.alphacapital.superapp.pms.views.CustomTextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel.Accent"
+                android:visibility="visible">
+
+                <com.application.alphacapital.superapp.pms.views.SemiBoldEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:hint="First Name"
+                    android:inputType="textCapWords"
+                    android:singleLine="true"
+                    android:textColor="@color/portfolio_colorPrimaryDark"
+                    android:textSize="14sp" />
+
+            </com.application.alphacapital.superapp.pms.views.CustomTextInputLayout>
+
+            <com.application.alphacapital.superapp.pms.views.CustomTextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel.Accent"
+                android:visibility="visible"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/portfolio_colorPrimaryDark">
+
+                <com.application.alphacapital.superapp.pms.views.SemiBoldEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:hint="Last Name"
+                    android:inputType="textCapWords"
+                    android:singleLine="true"
+                    android:textColor="@color/portfolio_colorPrimaryDark"
+                    android:textSize="14sp" />
+
+            </com.application.alphacapital.superapp.pms.views.CustomTextInputLayout>
+
+            <com.application.alphacapital.superapp.pms.views.CustomTextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel.Accent"
+                android:visibility="visible">
+
+                <com.application.alphacapital.superapp.pms.views.SemiBoldEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:textColor="@color/portfolio_colorPrimaryDark"
+                    android:textSize="14sp" />
+
+            </com.application.alphacapital.superapp.pms.views.CustomTextInputLayout>
+
+            <com.application.alphacapital.superapp.pms.views.CustomTextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel.Accent"
+                android:visibility="visible"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/portfolio_colorPrimaryDark">
+
+                <com.application.alphacapital.superapp.pms.views.SemiBoldEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:hint="Contact No"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="@color/portfolio_colorPrimaryDark"
+                    android:textSize="14sp" />
+
+            </com.application.alphacapital.superapp.pms.views.CustomTextInputLayout>
+
+            <com.application.alphacapital.superapp.pms.views.CustomTextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel.Accent"
+                android:visibility="visible">
+
+                <com.application.alphacapital.superapp.pms.views.SemiBoldEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:hint="Landline No"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:textColor="@color/portfolio_colorPrimaryDark"
+                    android:textSize="14sp" />
+
+            </com.application.alphacapital.superapp.pms.views.CustomTextInputLayout>
+
+            <com.application.alphacapital.superapp.pms.views.CustomTextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel.Accent"
+                android:visibility="visible"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/portfolio_colorPrimaryDark">
+
+                <com.application.alphacapital.superapp.pms.views.SemiBoldEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:hint="PAN No"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="@color/portfolio_colorPrimaryDark"
+                    android:textSize="14sp" />
+
+            </com.application.alphacapital.superapp.pms.views.CustomTextInputLayout>
+
+            <com.application.alphacapital.superapp.pms.views.CustomTextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel.Accent"
+                android:visibility="visible"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/portfolio_colorPrimaryDark">
+
+                <com.application.alphacapital.superapp.pms.views.SemiBoldEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:hint="Address"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="@color/portfolio_colorPrimaryDark"
+                    android:textSize="14sp" />
+
+            </com.application.alphacapital.superapp.pms.views.CustomTextInputLayout>
+
+            <com.application.alphacapital.superapp.pms.views.CustomTextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel.Accent"
+                android:visibility="visible"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/portfolio_colorPrimaryDark">
+
+                <com.application.alphacapital.superapp.pms.views.SemiBoldEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:hint="Company Name"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="@color/portfolio_colorPrimaryDark"
+                    android:textSize="14sp" />
+
+            </com.application.alphacapital.superapp.pms.views.CustomTextInputLayout>
+
+            <com.application.alphacapital.superapp.pms.views.CustomTextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel.Accent"
+                android:visibility="visible"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/portfolio_colorPrimaryDark">
+
+                <com.application.alphacapital.superapp.pms.views.SemiBoldEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:hint="Date of Birth"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="@color/portfolio_colorPrimaryDark"
+                    android:textSize="14sp" />
+
+            </com.application.alphacapital.superapp.pms.views.CustomTextInputLayout>
+
+            <com.application.alphacapital.superapp.pms.views.CustomTextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel.Accent"
+                android:visibility="visible"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/portfolio_colorPrimaryDark">
+
+                <com.application.alphacapital.superapp.pms.views.SemiBoldEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:hint="Bank Details 1"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="@color/portfolio_colorPrimaryDark"
+                    android:textSize="14sp" />
+
+            </com.application.alphacapital.superapp.pms.views.CustomTextInputLayout>
+
+            <com.application.alphacapital.superapp.pms.views.CustomTextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel.Accent"
+                android:visibility="visible"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/portfolio_colorPrimaryDark">
+
+                <com.application.alphacapital.superapp.pms.views.SemiBoldEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:hint="Bank Details 2"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="@color/portfolio_colorPrimaryDark"
+                    android:textSize="14sp" />
+
+            </com.application.alphacapital.superapp.pms.views.CustomTextInputLayout>
+
+            <com.application.alphacapital.superapp.pms.views.CustomTextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel.Accent"
+                android:visibility="visible"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/portfolio_colorPrimaryDark">
+
+                <com.application.alphacapital.superapp.pms.views.SemiBoldEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:hint="Nominee Detail with DOB 1"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="@color/portfolio_colorPrimaryDark"
+                    android:textSize="14sp" />
+
+            </com.application.alphacapital.superapp.pms.views.CustomTextInputLayout>
+
+            <com.application.alphacapital.superapp.pms.views.CustomTextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel.Accent"
+                android:visibility="visible"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/portfolio_colorPrimaryDark">
+
+                <com.application.alphacapital.superapp.pms.views.SemiBoldEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:hint="Nominee Detail with DOB 2"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="@color/portfolio_colorPrimaryDark"
+                    android:textSize="14sp" />
+
+            </com.application.alphacapital.superapp.pms.views.CustomTextInputLayout>
+
+        </LinearLayout>
+
+            <com.application.alphacapital.superapp.pms.views.CustomButton
+                android:id="@+id/btnSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/portfolio_button_bg_dark_with_border"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:layout_margin="12dp"
+                android:text="Update"
+                android:textColor="@color/portfolio_white"
+                android:textSize="16sp"
+                android:visibility="visible"
+                app:textAllCaps="false" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/capital_capital_bg_main"
+    android:orientation="vertical"
+    android:paddingBottom="56dp">
+
+    <include layout="@layout/capital_toolbar_portfolio" />
+
+    <LinearLayout
+        android:id="@+id/llLoading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/pbLoading"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="16dp"
+            android:theme="@style/ProgressBar" />
+
+        <com.application.alphacapital.superapp.acpital.textutils.CapitalCustomTextViewMedium
+            android:id="@+id/txtLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Loading..."
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardBackgroundColor="@color/colorPrimaryAlphaPortfolio"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/llLogin"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/capital_portfolio_button_selector"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.application.alphacapital.superapp.acpital.textutils.CapitalCustomTextViewSemiBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="LOGIN"
+                            android:textColor="@drawable/capital_portfolio_button_text_selector"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/view_portfolio" />
+
+                    <LinearLayout
+                        android:id="@+id/llSignUp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/capital_portfolio_button_selector"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.application.alphacapital.superapp.acpital.textutils.CapitalCustomTextViewSemiBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SIGN UP"
+                            android:textColor="@drawable/capital_portfolio_button_text_selector"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/view_portfolio" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="24dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/llLoginFields"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.application.alphacapital.superapp.acpital.textutils.CapitalCustomTextInputLayout
+                            android:id="@+id/inputEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/MyEditTextThemeRed"
+                            app:errorTextAppearance="@style/error_appearance">
+
+                            <com.application.alphacapital.superapp.acpital.textutils.CapitalCustomAppEditText
+                                android:id="@+id/edtEmail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="User Id"
+                                android:inputType="textEmailAddress"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:textColor="@color/white"
+                                android:textColorHint="@color/white"
+                                android:textCursorDrawable="@drawable/capital_text_cursor_white"
+                                android:textSize="16sp" />
+                        </com.application.alphacapital.superapp.acpital.textutils.CapitalCustomTextInputLayout>
+
+                        <com.application.alphacapital.superapp.acpital.textutils.CapitalCustomTextInputLayout
+                            android:id="@+id/inputPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:theme="@style/MyEditTextThemeRed"
+                            app:errorTextAppearance="@style/error_appearance">
+
+                            <com.application.alphacapital.superapp.acpital.textutils.CapitalCustomAppEditText
+                                android:id="@+id/edtPassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Password"
+                                android:imeOptions="actionUnspecified"
+                                android:inputType="textPassword"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:textColor="@color/white"
+                                android:textColorHint="@color/white"
+                                android:textCursorDrawable="@drawable/capital_text_cursor_white"
+                                android:textSize="16sp" />
+                        </com.application.alphacapital.superapp.acpital.textutils.CapitalCustomTextInputLayout>
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:id="@+id/checkBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Remember Me"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            app:buttonTint="@color/white" />
+
+                        <LinearLayout
+                            android:id="@+id/llForgotPassword"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginTop="3dp"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <com.application.alphacapital.superapp.acpital.textutils.CapitalCustomTextViewRegular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Forgot Password?"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.3dp"
+                                android:layout_marginTop="1dp"
+                                android:background="@color/white" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llSignUpFields"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <com.application.alphacapital.superapp.acpital.textutils.CapitalCustomTextInputLayout
+                            android:id="@+id/inputName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/MyEditTextThemeRed"
+                            app:errorTextAppearance="@style/error_appearance">
+
+                            <com.application.alphacapital.superapp.acpital.textutils.CapitalCustomAppEditText
+                                android:id="@+id/edtName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Name"
+                                android:inputType="textCapWords"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:textColor="@color/white"
+                                android:textColorHint="@color/white"
+                                android:textCursorDrawable="@drawable/capital_text_cursor_white"
+                                android:textSize="16sp" />
+                        </com.application.alphacapital.superapp.acpital.textutils.CapitalCustomTextInputLayout>
+
+                        <com.application.alphacapital.superapp.acpital.textutils.CapitalCustomTextInputLayout
+                            android:id="@+id/inputSignUpEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:theme="@style/MyEditTextThemeRed"
+                            app:errorTextAppearance="@style/error_appearance">
+
+                            <com.application.alphacapital.superapp.acpital.textutils.CapitalCustomAppEditText
+                                android:id="@+id/edtSignUpEmail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Email"
+                                android:inputType="textEmailAddress"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:textColor="@color/white"
+                                android:textColorHint="@color/white"
+                                android:textCursorDrawable="@drawable/capital_text_cursor_white"
+                                android:textSize="16sp" />
+                        </com.application.alphacapital.superapp.acpital.textutils.CapitalCustomTextInputLayout>
+
+                        <com.application.alphacapital.superapp.acpital.textutils.CapitalCustomTextInputLayout
+                            android:id="@+id/inputContactNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:theme="@style/MyEditTextThemeRed"
+                            app:errorTextAppearance="@style/error_appearance">
+
+                            <com.application.alphacapital.superapp.acpital.textutils.CapitalCustomAppEditText
+                                android:id="@+id/edtContactNumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Contact Number"
+                                android:inputType="phone"
+                                android:maxLength="10"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:textColor="@color/white"
+                                android:textColorHint="@color/white"
+                                android:textCursorDrawable="@drawable/capital_text_cursor_white"
+                                android:textSize="16sp" />
+                        </com.application.alphacapital.superapp.acpital.textutils.CapitalCustomTextInputLayout>
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:id="@+id/cbTerms"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="I agree to get call, SMS and emails"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            app:buttonTint="@color/white" />
+                    </LinearLayout>
+
+                    <com.application.alphacapital.superapp.acpital.textutils.CapitalCustomTextViewMedium
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Or login using social media"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/ivFacebook"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/capital_ic_facebook"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/ivGPlus"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="16dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/capital_ic_gplus"
+                            android:visibility="gone" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <LinearLayout
+                            android:id="@+id/llSubmit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@drawable/capital_login_button_selector"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingLeft="24dp"
+                            android:paddingRight="24dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="24dp"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/capital_arrow_selector" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

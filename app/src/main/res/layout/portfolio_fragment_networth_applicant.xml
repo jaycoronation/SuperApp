@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/portfolio_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/portfolio_layout_loading" />
+
+    <include layout="@layout/portfolio_layout_no_internet" />
+
+    <include layout="@layout/portfolio_layout_nodata" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvApplicant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:scrollbars="none" />
+
+            <com.application.alphacapital.superapp.pms.views.BoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_blue_new"
+                android:padding="12dp"
+                android:text="Total"
+                android:textColor="@color/blue_new"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/portfolio_blue_dark_gradient_new"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Invested Amount"
+                            android:textColor="@color/portfolio_white"
+                            android:textSize="13sp" />
+
+                        <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+                            android:id="@+id/txtTotalAmountInvested"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="1015875385"
+                            android:textColor="@color/portfolio_white"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:orientation="vertical">
+
+                        <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Gain"
+                            android:textColor="@color/portfolio_white"
+                            android:textSize="13sp" />
+
+                        <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+                            android:id="@+id/txtTotalGain"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="1015875385"
+                            android:textColor="@color/portfolio_white"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:orientation="vertical">
+
+                        <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Weighted Days"
+                            android:textColor="@color/portfolio_white"
+                            android:textSize="13sp" />
+
+                        <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+                            android:id="@+id/txtTotalWeightsDays"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="₹ 80,000"
+                            android:textColor="@color/portfolio_white"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Current Value"
+                            android:textColor="@color/portfolio_white"
+                            android:textSize="13sp" />
+
+                        <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+                            android:id="@+id/txtTotalCurrentValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="1015875385"
+                            android:textColor="@color/portfolio_white"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:orientation="vertical">
+
+                        <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Dividend"
+                            android:textColor="@color/portfolio_white"
+                            android:textSize="13sp" />
+
+                        <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+                            android:id="@+id/txtTotalDivedent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="₹ 80,000"
+                            android:textColor="@color/portfolio_white"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.application.alphacapital.superapp.pms.views.BoldTextView
+        android:id="@+id/txtApplicantName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/portfolio_light_bg_color"
+        android:padding="12dp"
+        android:text="Abhimanyu Bansal"
+        android:textColor="@color/portfolio_colorPrimaryDark"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/llApplicantData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvApplicantAssetsData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:scrollbars="none" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llApplicantTotalData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="@drawable/portfolio_blue_dark_gradient"
+        android:orientation="horizontal">
+
+        <com.application.alphacapital.superapp.pms.views.BoldTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:textColor="@color/portfolio_white"
+            android:textSize="14sp"
+            android:layout_weight="1.3"/>
+
+        <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+            android:id="@+id/txtApplicantTotalAmount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:gravity="center"
+            android:text="2972640"
+            android:textColor="@color/portfolio_white"
+            android:textSize="14sp"
+            android:layout_weight="1"/>
+
+        <com.application.alphacapital.superapp.pms.views.SemiBoldTextView
+            android:id="@+id/txtApplicantTotalHoldingPercentage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:gravity="center"
+            android:text="3.03"
+            android:textColor="@color/portfolio_white"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/portfolio_colorPrimaryDark"/>
+
+</LinearLayout>

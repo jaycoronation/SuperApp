@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llNonZero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:orientation="horizontal">
+
+            <com.application.alphacapital.superapp.pms.views.BoldTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:text="Non Zero Folios"
+                android:textColor="@color/blue_new"
+                android:textSize="16sp" />
+
+            <com.application.alphacapital.superapp.pms.views.BoldTextView
+                android:id="@+id/txtSelectedNonZero"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/portfolio_circle"
+                android:layout_gravity="center"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llAllFolio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:orientation="horizontal">
+
+            <com.application.alphacapital.superapp.pms.views.BoldTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:text="All Folios"
+                android:textColor="@color/blue_new"
+                android:textSize="14sp" />
+
+            <com.application.alphacapital.superapp.pms.views.BoldTextView
+                android:id="@+id/txtSelectedAll"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/portfolio_circle"
+                android:layout_gravity="center"
+                android:layout_marginRight="12dp"
+                android:visibility="gone"
+                android:layout_marginLeft="12dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
